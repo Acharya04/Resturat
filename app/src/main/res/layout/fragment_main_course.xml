@@ -1,0 +1,2172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainCourse">
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:background="#ffffff">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff">
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View Cart n"
+                                android:id="@+id/tab1view"/>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd1"
+                                android:layout_below="@id/tab1view">
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all1"
+                                        android:src="@drawable/friedrice"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Fried Rice"
+                                        android:layout_toRightOf="@id/all1"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr"
+                                        android:text="160RS"
+                                        android:layout_below="@id/all1nm"
+                                        android:layout_toRightOf="@id/all1"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1stk"
+                                        android:layout_below="@id/all1pr"
+                                        android:layout_toRightOf="@+id/all1"
+                                        android:text=""/>
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1stk"
+                                        android:layout_toRightOf="@id/all1"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd2"
+                                android:layout_below="@id/cd1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all2"
+                                        android:src="@drawable/combo1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack A \n Chicken Soup+Chicken Lollipop(3pcs)+Chicken Fried Rice+Coke(200 ml)"
+                                        android:layout_toRightOf="@id/all2"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm2"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr2"
+                                        android:text="225RS"
+                                        android:layout_below="@id/all1nm2"
+                                        android:layout_toRightOf="@id/all2"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add2"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr2"
+                                        android:layout_toRightOf="@id/all2"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd3"
+                                android:layout_below="@id/cd2">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all3"
+                                        android:src="@drawable/lollipop"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Lollipop \n (6 pcs)"
+                                        android:layout_toRightOf="@id/all3"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm3"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr3"
+                                        android:text="140 RS"
+                                        android:layout_below="@id/all1nm3"
+                                        android:layout_toRightOf="@id/all3"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add3"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr3"
+                                        android:layout_toRightOf="@id/all3"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd4"
+                                android:layout_below="@id/cd3">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all4"
+                                        android:src="@drawable/tripleschezwanrice"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Triple Schezwan Rice"
+                                        android:layout_toRightOf="@id/all4"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm4"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr4"
+                                        android:text="175 RS"
+                                        android:layout_below="@id/all1nm4"
+                                        android:layout_toRightOf="@id/all4"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add4"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr4"
+                                        android:layout_toRightOf="@id/all4"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd5"
+                                android:layout_below="@id/cd4">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all5"
+                                        android:src="@drawable/chicken65"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken 65"
+                                        android:layout_toRightOf="@id/all5"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm5"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr5"
+                                        android:text="150 RS"
+                                        android:layout_below="@id/all1nm5"
+                                        android:layout_toRightOf="@id/all5"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add5"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr5"
+                                        android:layout_toRightOf="@id/all5"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd6"
+                                android:layout_below="@id/cd5">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all6"
+                                        android:src="@drawable/soup1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Soup"
+                                        android:layout_toRightOf="@id/all6"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm6"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr6"
+                                        android:text="120 RS"
+                                        android:layout_below="@id/all1nm6"
+                                        android:layout_toRightOf="@id/all6"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add6"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr6"
+                                        android:layout_toRightOf="@id/all6"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd7"
+                                android:layout_below="@id/cd6">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all7"
+                                        android:src="@drawable/paneer"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paneer Chilli"
+                                        android:layout_toRightOf="@id/all7"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm7"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr7"
+                                        android:text="140 RS"
+                                        android:layout_below="@id/all1nm7"
+                                        android:layout_toRightOf="@id/all7"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add7"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr7"
+                                        android:layout_toRightOf="@id/all7"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd8"
+                                android:layout_below="@id/cd7">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all8"
+                                        android:src="@drawable/soup2"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Manchow Soup"
+                                        android:layout_toRightOf="@id/all8"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm8"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr8"
+                                        android:text="115 RS"
+                                        android:layout_below="@id/all1nm8"
+                                        android:layout_toRightOf="@id/all8"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add8"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr8"
+                                        android:layout_toRightOf="@id/all8"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd9"
+                                android:layout_below="@id/cd8">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all9"
+                                        android:src="@drawable/soup3"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Garlic Soup"
+                                        android:layout_toRightOf="@id/all9"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm9"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr9"
+                                        android:text="125RS"
+                                        android:layout_below="@id/all1nm9"
+                                        android:layout_toRightOf="@id/all9"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add9"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr9"
+                                        android:layout_toRightOf="@id/all9"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd10"
+                                android:layout_below="@id/cd9">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all10"
+                                        android:src="@drawable/combo2"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack B\nChicken Soup+Chicken Lollipop(3pcs)+ Chicken Triple Schewan Rice+Coke(200 ml)"
+                                        android:layout_toRightOf="@id/all10"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm10"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr10"
+                                        android:text="235 RS"
+                                        android:layout_below="@id/all1nm10"
+                                        android:layout_toRightOf="@id/all10"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add10"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr10"
+                                        android:layout_toRightOf="@id/all10"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd11"
+                                android:layout_below="@id/cd10">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all11"
+                                        android:src="@drawable/chilli"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Chilli"
+                                        android:layout_toRightOf="@id/all11"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm11"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr11"
+                                        android:text="165 RS"
+                                        android:layout_below="@id/all1nm11"
+                                        android:layout_toRightOf="@id/all11"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add11"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr11"
+                                        android:layout_toRightOf="@id/all11"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd12"
+                                android:layout_below="@id/cd11">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all12"
+                                        android:src="@drawable/c1000"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken 1000 Rice"
+                                        android:layout_toRightOf="@id/all12"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm12"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr12"
+                                        android:text="175 RS"
+                                        android:layout_below="@id/all1nm12"
+                                        android:layout_toRightOf="@id/all12"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add12"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr12"
+                                        android:layout_toRightOf="@id/all12"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd13"
+                                android:layout_below="@id/cd12">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all13"
+                                        android:src="@drawable/paneer1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paneer Machurian Dry"
+                                        android:layout_toRightOf="@id/all13"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm13"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr13"
+                                        android:text="165 RS"
+                                        android:layout_below="@id/all1nm13"
+                                        android:layout_toRightOf="@id/all13"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add13"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr13"
+                                        android:layout_toRightOf="@id/all13"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd14"
+                                android:layout_below="@id/cd13">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all14"
+                                        android:src="@drawable/soup4"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prawns Manchow Soup"
+                                        android:layout_toRightOf="@id/all14"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm14"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr14"
+                                        android:text="125 RS"
+                                        android:layout_below="@id/all1nm14"
+                                        android:layout_toRightOf="@id/all14"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add14"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr14"
+                                        android:layout_toRightOf="@id/all14"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd15"
+                                android:layout_below="@id/cd14">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all15"
+                                        android:src="@drawable/crispy"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Crispy"
+                                        android:layout_toRightOf="@id/all15"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm15"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr15"
+                                        android:text="165 RS"
+                                        android:layout_below="@id/all1nm15"
+                                        android:layout_toRightOf="@id/all15"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add15"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr15"
+                                        android:layout_toRightOf="@id/all15"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd16"
+                                android:layout_below="@id/cd15">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all16"
+                                        android:src="@drawable/soup5"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Veg Manchow Soup"
+                                        android:layout_toRightOf="@id/all16"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm16"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr16"
+                                        android:text="105 RS"
+                                        android:layout_below="@id/all1nm16"
+                                        android:layout_toRightOf="@id/all16"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add16"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr16"
+                                        android:layout_toRightOf="@id/all16"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd17"
+                                android:layout_below="@id/cd16">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all17"
+                                        android:src="@drawable/hakka"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Hakka Noodles"
+                                        android:layout_toRightOf="@id/all17"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm17"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr17"
+                                        android:text="145 RS"
+                                        android:layout_below="@id/all1nm17"
+                                        android:layout_toRightOf="@id/all17"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add17"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr17"
+                                        android:layout_toRightOf="@id/all17"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd18"
+                                android:layout_below="@id/cd17">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all18"
+                                        android:src="@drawable/prawns"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prawns 65"
+                                        android:layout_toRightOf="@id/all18"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm18"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr18"
+                                        android:text="205 RS"
+                                        android:layout_below="@id/all1nm18"
+                                        android:layout_toRightOf="@id/all18"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add18"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr18"
+                                        android:layout_toRightOf="@id/all18"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd19"
+                                android:layout_below="@id/cd18">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all19"
+                                        android:src="@drawable/soup6"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Spicy Thai Prawns Soup"
+                                        android:layout_toRightOf="@id/all19"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm19"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr19"
+                                        android:text="135 RS"
+                                        android:layout_below="@id/all1nm19"
+                                        android:layout_toRightOf="@id/all19"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add19"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr19"
+                                        android:layout_toRightOf="@id/all19"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd20"
+                                android:layout_below="@id/cd19">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all20"
+                                        android:src="@drawable/combo3"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack C\n Chicken Manchow Soup+Chicken Lollipop(3pcs)+Chicken Hakka Noodles+Coke(200ml)"
+                                        android:layout_toRightOf="@id/all20"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm20"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr20"
+                                        android:text="240 RS"
+                                        android:layout_below="@id/all1nm20"
+                                        android:layout_toRightOf="@id/all20"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add20"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr20"
+                                        android:layout_toRightOf="@id/all20"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd21">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all21"
+                                        android:src="@drawable/lollipop"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Lollipop \n (6 pcs)"
+                                        android:layout_toRightOf="@id/all21"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm21"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr21"
+                                        android:text="140RS"
+                                        android:layout_below="@id/all1nm21"
+                                        android:layout_toRightOf="@id/all21"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add21"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr21"
+                                        android:layout_toRightOf="@id/all21"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd22"
+                                android:layout_below="@id/cd21">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all22"
+                                        android:src="@drawable/chicken65"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken 65"
+                                        android:layout_toRightOf="@id/all22"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm22"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr22"
+                                        android:text="150 RS"
+                                        android:layout_below="@id/all1nm22"
+                                        android:layout_toRightOf="@id/all22"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add22"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr22"
+                                        android:layout_toRightOf="@id/all22"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd23"
+                                android:layout_below="@id/cd22">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all23"
+                                        android:src="@drawable/crispy"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Crispy"
+                                        android:layout_toRightOf="@id/all23"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm23"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr23"
+                                        android:text="165 RS"
+                                        android:layout_below="@id/all1nm23"
+                                        android:layout_toRightOf="@id/all23"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add23"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr23"
+                                        android:layout_toRightOf="@id/all23"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd24"
+                                android:layout_below="@id/cd23">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all24"
+                                        android:src="@drawable/chilli"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Chilli"
+                                        android:layout_toRightOf="@id/all24"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm24"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr24"
+                                        android:text="165RS"
+                                        android:layout_below="@id/all1nm24"
+                                        android:layout_toRightOf="@id/all24"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add24"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr24"
+                                        android:layout_toRightOf="@id/all24"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd25"
+                                android:layout_below="@id/cd24">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all25"
+                                        android:src="@drawable/paneer1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paneer Manchurian Dry"
+                                        android:layout_toRightOf="@id/all25"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm25"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr25"
+                                        android:text="165 RS"
+                                        android:layout_below="@id/all1nm25"
+                                        android:layout_toRightOf="@id/all25"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add25"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr25"
+                                        android:layout_toRightOf="@id/all25"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd26"
+                                android:layout_below="@id/cd25">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all26"
+                                        android:src="@drawable/prawns"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prawns 65"
+                                        android:layout_toRightOf="@id/all26"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm26"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr26"
+                                        android:text="205 RS"
+                                        android:layout_below="@id/all1nm26"
+                                        android:layout_toRightOf="@id/all26"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add26"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr26"
+                                        android:layout_toRightOf="@id/all26"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd27"
+                                android:layout_below="@id/cd26">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all27"
+                                        android:src="@drawable/paneer"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Paneer Chilli"
+                                        android:layout_toRightOf="@id/all27"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm27"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr27"
+                                        android:text="120RS"
+                                        android:layout_below="@id/all1nm27"
+                                        android:layout_toRightOf="@id/all27"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add27"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr27"
+                                        android:layout_toRightOf="@id/all27"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd31">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all31"
+                                        android:src="@drawable/soup1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Soup"
+                                        android:layout_toRightOf="@id/all31"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm31"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr31"
+                                        android:text="120 RS"
+                                        android:layout_below="@id/all1nm31"
+                                        android:layout_toRightOf="@id/all31"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add31"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr31"
+                                        android:layout_toRightOf="@id/all31"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd32"
+                                android:layout_below="@id/cd31">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all32"
+                                        android:src="@drawable/soup2"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Manchow Soup"
+                                        android:layout_toRightOf="@id/all32"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm32"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr32"
+                                        android:text="115 RS"
+                                        android:layout_below="@id/all1nm32"
+                                        android:layout_toRightOf="@id/all32"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add32"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr32"
+                                        android:layout_toRightOf="@id/all32"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd33"
+                                android:layout_below="@id/cd32">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all33"
+                                        android:src="@drawable/soup3"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="chicken Garlic Soup"
+                                        android:layout_toRightOf="@id/all33"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm33"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr33"
+                                        android:text="125 RS"
+                                        android:layout_below="@id/all1nm33"
+                                        android:layout_toRightOf="@id/all33"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add33"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr33"
+                                        android:layout_toRightOf="@id/all33"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd34"
+                                android:layout_below="@id/cd33">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all34"
+                                        android:src="@drawable/soup4"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Prawns Manchow Soup"
+                                        android:layout_toRightOf="@id/all34"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm34"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr34"
+                                        android:text="125 RS"
+                                        android:layout_below="@id/all1nm34"
+                                        android:layout_toRightOf="@id/all34"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add34"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr34"
+                                        android:layout_toRightOf="@id/all34"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd35"
+                                android:layout_below="@id/cd34">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all35"
+                                        android:src="@drawable/soup5"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Veg Manchow Soup"
+                                        android:layout_toRightOf="@id/all35"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm35"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr35"
+                                        android:text="105 RS"
+                                        android:layout_below="@id/all1nm35"
+                                        android:layout_toRightOf="@id/all35"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add35"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr35"
+                                        android:layout_toRightOf="@id/all35"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd36"
+                                android:layout_below="@id/cd35">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all36"
+                                        android:src="@drawable/soup6"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Spicy Thai Prawns Soup"
+                                        android:layout_toRightOf="@id/all36"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm36"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr36"
+                                        android:text="135 RS"
+                                        android:layout_below="@id/all1nm36"
+                                        android:layout_toRightOf="@id/all36"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add36"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr36"
+                                        android:layout_toRightOf="@id/all36"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd41">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all41"
+                                        android:src="@drawable/friedrice"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Fried Rice"
+                                        android:layout_toRightOf="@id/all41"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm41"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr41"
+                                        android:text="160 RS"
+                                        android:layout_below="@id/all1nm41"
+                                        android:layout_toRightOf="@id/all41"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add41"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr41"
+                                        android:layout_toRightOf="@id/all41"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd42"
+                                android:layout_below="@id/cd41">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all42"
+                                        android:src="@drawable/tripleschezwanrice"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Triple Schezwan Rice"
+                                        android:layout_toRightOf="@id/all42"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm42"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr42"
+                                        android:text="175 RS"
+                                        android:layout_below="@id/all1nm42"
+                                        android:layout_toRightOf="@id/all42"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add42"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr42"
+                                        android:layout_toRightOf="@id/all42"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd43"
+                                android:layout_below="@id/cd42">
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all43"
+                                        android:src="@drawable/c1000"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken 1000 Rice"
+                                        android:layout_toRightOf="@id/all43"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm43"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr43"
+                                        android:text="175 RS"
+                                        android:layout_below="@id/all1nm43"
+                                        android:layout_toRightOf="@id/all43"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add43"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr43"
+                                        android:layout_toRightOf="@id/all43"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd44"
+                                android:layout_below="@id/cd43">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all44"
+                                        android:src="@drawable/hakka"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Chicken Hakka Noodles"
+                                        android:layout_toRightOf="@id/all44"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm44"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr44"
+                                        android:text="145 RS"
+                                        android:layout_below="@id/all1nm44"
+                                        android:layout_toRightOf="@id/all44"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add44"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr44"
+                                        android:layout_toRightOf="@id/all44"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd51">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all51"
+                                        android:src="@drawable/combo1"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack A \n Chicken Soup+Chicken Lollipop(3pcs)+Chicken Fried Rice+Coke(200 ml)"
+                                        android:layout_toRightOf="@id/all51"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm51"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr51"
+                                        android:text="225 RS"
+                                        android:layout_below="@id/all1nm51"
+                                        android:layout_toRightOf="@id/all51"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add51"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr51"
+                                        android:layout_toRightOf="@id/all51"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd52"
+                                android:layout_below="@id/cd51">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all52"
+                                        android:src="@drawable/combo2"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack B\nChicken Soup+Chicken Lollipop(3pcs)+ Chicken Triple Schewan Rice+Coke(200 ml)"
+                                        android:layout_toRightOf="@id/all52"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm52"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr52"
+                                        android:text="235 RS"
+                                        android:layout_below="@id/all1nm52"
+                                        android:layout_toRightOf="@id/all52"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add52"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr52"
+                                        android:layout_toRightOf="@id/all52"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/cd53"
+                                android:layout_below="@id/cd52">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <ImageView
+                                        android:layout_width="200dp"
+                                        android:layout_height="200dp"
+                                        android:id="@+id/all53"
+                                        android:src="@drawable/combo3"
+                                        android:scaleType="centerCrop" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Combo Pack C\n Chicken Manchow Soup+Chicken Lollipop(3pcs)+Chicken Hakka Noodles+Coke(200ml)"
+                                        android:layout_toRightOf="@id/all53"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginLeft="30dp"
+                                        android:textStyle="bold"
+                                        android:id="@+id/all1nm53"
+                                        />
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1pr53"
+                                        android:text="240 RS"
+                                        android:layout_below="@id/all1nm53"
+                                        android:layout_toRightOf="@id/all53"
+                                        android:layout_marginLeft="50dp"
+                                        android:textSize="20dp"
+                                        android:layout_marginTop="10dp"
+                                        />
+                                    <Button
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/all1add53"
+                                        android:text="Add to list"
+                                        android:layout_below="@id/all1pr53"
+                                        android:layout_toRightOf="@id/all53"
+                                        android:layout_marginLeft="30dp"
+                                        android:layout_marginTop="20dp"/>
+                                </RelativeLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </RelativeLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+
+</FrameLayout>

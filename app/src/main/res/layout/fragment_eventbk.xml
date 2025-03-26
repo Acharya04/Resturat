@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eventbk">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thanks for enquiry...........\n Our executive will call you shortly...
+\n\n\n\n\n By Order\n Food Studio"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textAppearance="@style/Platform.MaterialComponents.Light"
+            android:textStyle="bold"
+            android:textColorHighlight="#ff0000"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

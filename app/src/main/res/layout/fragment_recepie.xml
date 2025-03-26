@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recepie">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/retxt1"
+                android:text="Dum Pukht Gosht Recipe - Slow Cooked Mutton Curry"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/resimg1"
+                android:layout_below="@id/retxt1"
+                android:src="@drawable/res"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/testxt2"
+                android:layout_below="@id/resimg1"
+                android:text="Dum Pukht is a slow cooking technique where food is cooked in a sealed vessel. Dum means to breathe and Pukht means to cook. Lucknowi Nawabs used this technique of cooking and the Lucknowi dum cooked recipes like their biryani is quite popular.  Dum Pukht Gosht is a mouthwatering mutton recipe where marinated mutton is cooked slowly in a sealed vessel. Different spices like black cardamom, green cardamom, pepper, cloves etc add a burst of flavour to the tender, falling of the bone mutton.  Patience ..."
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/restxt3"
+                android:layout_below="@id/testxt2"
+                android:text="Ingredients \n
+500 grams Mutton\n
+1-1/2 cups Curd (Dahi / Yogurt)\n
+2 Cardamom (Elaichi) Pods/Seeds\n
+1 Brown cardamom (Badi Elaichi)\n
+1 teaspoon Black pepper corns\n
+4 Cloves (Laung)\n
+1 inch Cinnamon stick\n
+1 teaspoon Cumin (Jeera) seeds\n
+1 Onion , sliced\n
+8 cloves Garlic\n
+1 inch Ginger\n
+4 Green Chillies\n
+1-1/2 teaspoons Coriander (Dhania) Powder\n
+1 teaspoon Red Chilli powder\n
+1/2 teaspoon Turmeric powder (Haldi)\n
+1/2 teaspoon Garam masala powder\n
+1/4 cup Coriander (Dhania) Leaves\n
+Ghee , for cooking\n
+To seal the vessel\n
+2 cups Whole Wheat Flour\n
+Water , for kneading"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restxt3"
+                android:text="How to make Dum Pukht Gosht Recipe - Slow Cooked Mutton Curry\n\n
+                To begin making Dum Pukht Gosht we will first prepare the ingredients required for marinating the mutton. \n
+
+                Heat ghee in a preheated pan; add the onions and saute until the onion turn golden brown.\n
+
+            Once the onions have started to turn golden brown add all the whole spices, black cardamom, green cardamom, cloves, cinnamon stick, peppercorn and saute till the spices release a nice aroma. Turn off the heat and let it cool.\n
+
+Once cooled add the caramelized onions and the whole spices to a mixer grinder. Add the garlic, ginger, green chillies and half the curd and grind to a smooth paste.\n
+
+Marinate the mutton with the above ground spice curd and onion mixture. \n
+
+Add the remaining curd, chilli powder, turmeric powder, coriander powder,garam masala powder, salt to taste to the above mutton and marinate it in the refrigerator for two hours or overnight.
+
+You can marinate the meat longer to get maximum flavour in the dish.
+
+While the mutton is marinating knead the dough that you need to seal the vessel in which you are going to cook the gosht in. The dough should be a bit stiff, like how you knead for puris.
+
+*To make the Dum Pukht Gosht
+
+Once the mutton has marinated, preheat a heavy bottomed vessel or handi and add some ghee.
+
+Add the marinated mutton in the handi and saute for a few minutes till the marinated mutton leaves oil on the sides. This will take about 10 minutes. Add one glass of water and bring the Mutton gosht to a boil.
+
+Cover the handi with a lid and seal it with the wheat dough and leave the Mutton gosht cook on low heat for about 50 minutes. This process of covering and sealing the lid with the dough is called Dum Cooking a very slow cooking process that brings in flavours to the dish.
+
+After about one hour turn off the heat and remove the dough on the lid with the help of a kitchen knife.
+
+You will notice the Dum Pukht Gosht has a rich colour and taste with all the natural oils from the the mutton released into the dish. Give it a stir and adjust the salt accordingly.
+
+Transfer the Dum Pukht Gosht into a serving dish and garnish with coriander leaves and serve hot.
+
+Serve Dum Pukht Gosht with hot with Mande Roti or Butter Garlic Naan and Tomato Onion Cucumber Raita for a weekend lunch or dinner. you can even serve it at your next dinner party."
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+
+                ></TextView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

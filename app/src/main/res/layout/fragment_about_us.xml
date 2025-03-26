@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_us">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT US"
+            android:textSize="43dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+
+            android:id="@+id/txt1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:text="Based in Mumbai, The Food Studio offers you with a great number of cuisines and a wide platter of tasty dishes that will surely appeal to your appetite and make your guests ask for more. It's a fine dining restaurant offering its food with a twist of taste for many gatherings and events. They provide you with a culinary experience which will make your event or occasion a raving success."
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:id="@+id/txt2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:text="Version 1.2.0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/txt3"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:text="developer.android@gmail.com"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/txt4"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt4"
+            android:text="Copyright@2020 All right reserved"
+            android:textSize="18dp"
+
+            android:gravity="center"
+            android:id="@+id/txt5"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+    </FrameLayout>

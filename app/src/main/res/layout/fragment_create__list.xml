@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_List">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MY CART"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/savetxt"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:background="#ff0000"
+                android:textColor="#ffffff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dt"
+                android:layout_below="@id/savetxt"
+                android:textSize="25dp"
+                android:layout_marginTop="50dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter your Full Name"
+                android:id="@+id/ordernm"
+                android:layout_below="@id/dt"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter your Shipping Address"
+                android:id="@+id/orderadd"
+                android:layout_below="@+id/ordernm"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:layout_marginTop="10dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter your Phone number "
+                android:id="@+id/ordermob"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:layout_below="@id/orderadd"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carttxt11"
+                android:layout_below="@id/ordermob"
+                android:text="Your Item : "
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carttxt1"
+                android:text="hiiiii"
+                android:layout_toRightOf="@id/carttxt11"
+                android:layout_below="@id/ordermob"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carttxt21"
+                android:layout_below="@id/carttxt11"
+                android:text="Item Price : "
+                android:textSize="20dp"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carttxt2"
+                android:layout_below="@id/carttxt1"
+                android:text="Price"
+                android:layout_toRightOf="@id/carttxt21"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cartdel"
+                android:text="Delivery Charges : 35"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/carttxt21"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/carttot"
+                android:layout_below="@id/cartdel"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Order now"
+                android:layout_below="@id/carttot"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btnorder"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

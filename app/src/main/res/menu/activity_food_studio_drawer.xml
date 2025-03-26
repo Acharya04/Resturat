@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="Main Course" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_local_cafe_black_24dp"
+            android:title="Receipe" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_insert_emoticon_black_24dp"
+            android:title="Ratings" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_event_black_24dp"
+            android:title="Book an event" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_Contact"
+            android:icon="@drawable/ic_contact_phone_black_24dp"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Logout" />
+    </group>
+</menu>
